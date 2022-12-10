@@ -2,13 +2,16 @@ package me.dio.gameawards.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import me.dio.gameawards.domain.model.Game;
 
+@Service
 public interface GameService {
 	
 	List<Game> findAll();
 	
-	Game findByid(Long id);
+	Game findById(Long id);
 	
 	void insert(Game game);
 	
